@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>NEXUS | Diagnóstico Estratégico</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #080808;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: #111;
+      padding: 40px;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 500px;
+      border: 1px solid rgba(184,134,11,0.3);
+      box-shadow: 0 0 40px rgba(184,134,11,0.2);
+    }
+
+    h1 {
+      color: #B8860B;
+      font-family: serif;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #aaa;
+      margin-bottom: 30px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 10px;
+      color: white;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background: #B8860B;
+      border: none;
+      border-radius: 12px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #a67608;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #666;
+      text-align: center;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Solicitar Diagnóstico Estratégico</h1>
+  <p>Atendimento reservado para C-Level, Jurídico e Conselhos.</p>
+
+  <form onsubmit="enviarWhatsApp(event)">
+    <input type="text" id="nome" placeholder="Nome completo" required>
+    <input type="text" id="empresa" placeholder="Empresa" required>
+    <input type="text" id="setor" placeholder="Setor" required>
+
+    <select id="risco" required>
+      <option value="">Natureza do risco prioritário</option>
+      <option>Risco Regulatório</option>
+      <option>Volatilidade Cambial</option>
+      <option>Exposição Jurídica</option>
+      <option>Cadeia de Suprimentos</option>
+      <option>Compliance e LGPD</option>
+    </select>
+
+    <button type="submit">Iniciar Análise Confidencial</button>
+  </form>
+
+  <div class="footer">
+    NEXUS © 2026 | Engineering Risk Architecture
+  </div>
+</div>
+
+<script>
+function enviarWhatsApp(event) {
+  event.preventDefault();
+
+  var nome = document.getElementById("nome").value;
+  var empresa = document.getElementById("empresa").value;
+  var setor = document.getElementById("setor").value;
+  var risco = document.getElementById("risco").value;
+
+  var mensagem = 
+`NEXUS - Solicitação Executiva
+
+Nome: ${nome}
+Empresa: ${empresa}
+Setor: ${setor}
+Risco Prioritário: ${risco}`;
+
+  var url = "https://wa.me/5565992689099?text=" + encodeURIComponent(mensagem);
+
+  window.location.href = url;
+}
+</script>
+
+</body>
+</html>
