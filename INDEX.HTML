@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>NEXUS | Engineering Risk Architecture</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --obsidian:#080808;
+    --gold:#B8860B;
+    --emerald:#004D40;
+    --glass: rgba(255,255,255,0.05);
+}
+
+body {
+    margin:0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg,#080808,#111);
+    color:#f2f2f2;
+}
+
+header {
+    padding:30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo {
+    font-family:'Playfair Display', serif;
+    font-size:28px;
+    color:var(--gold);
+}
+
+.lang-toggle {
+    cursor:pointer;
+    border:1px solid var(--gold);
+    padding:8px 14px;
+    border-radius:30px;
+    font-size:12px;
+}
+
+.hero {
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1 {
+    font-family:'Playfair Display', serif;
+    font-size:42px;
+    color:var(--gold);
+    margin-bottom:20px;
+}
+
+.hero p {
+    max-width:700px;
+    margin:auto;
+    opacity:0.85;
+}
+
+.section {
+    padding:80px 10%;
+}
+
+.glass-card {
+    background:var(--glass);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.1);
+    padding:40px;
+    border-radius:20px;
+    margin-bottom:40px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.5);
+}
+
+.section h2 {
+    font-family:'Playfair Display', serif;
+    color:var(--gold);
+    margin-bottom:30px;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.dashboard {
+    background:#111;
+    padding:40px;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.widget {
+    margin-bottom:30px;
+}
+
+.widget h3 {
+    color:var(--emerald);
+    margin-bottom:10px;
+}
+
+canvas {
+    background:#0f0f0f;
+    border-radius:10px;
+}
+
+.footer {
+    padding:40px;
+    text-align:center;
+    opacity:0.6;
+    font-size:12px;
+}
+
+.button {
+    background:var(--gold);
+    color:black;
+    padding:12px 20px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+    display:inline-block;
+    margin-top:15px;
+}
+
+.integrations {
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+@media(max-width:768px){
+    .hero h1{font-size:30px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">NEXUS</div>
+    <div class="lang-toggle" onclick="toggleLanguage()">PT / EN</div>
+</header>
+
+<section class="hero">
+    <h1 id="hero-title">
+        Engenharia de IA para Blindagem de Capital e Risco Regulatório
+    </h1>
+    <p id="hero-desc">
+        Plataforma de Engenharia de Risco para Mineração, Agro e Saúde. Arquitetura probabilística para defesa jurídica e preservação de margem estrutural.
+    </p>
+</section>
+
+<section class="section">
+    <div class="glass-card">
+        <h2 id="ecosystem-title">Ecossistema Recorrente</h2>
+        <div class="grid">
+            <div>
+                <h3>Diagnóstico Estrutural</h3>
+                <p>Auditoria técnica de risco cambial, margem e exposição regulatória em tempo real.</p>
+            </div>
+            <div>
+                <h3>Micro-SaaS Jurídico</h3>
+                <p>Agentes de IA para análise LGPD, contratos estratégicos e compliance operacional.</p>
+            </div>
+            <div>
+                <h3>Agentes On-Demand</h3>
+                <p>Assistentes probabilísticos para Ouro (XAU), DXY e volatilidade estrutural.</p>
+            </div>
+            <div>
+                <h3>Mentoria Premium</h3>
+                <p>Aconselhamento executivo direto para C-Level e defesa corporativa estratégica.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>The Control Room</h2>
+    <div class="dashboard">
+
+        <div class="widget">
+            <h3>Monte Carlo Risk Simulation</h3>
+            <canvas id="riskChart" width="600" height="200"></canvas>
+        </div>
+
+        <div class="widget">
+            <h3>Volatility Monitor</h3>
+            <p>XAU: $2,034 | DXY: 103.1 | Insumos Críticos: Alta Volatilidade</p>
+        </div>
+
+        <div class="widget">
+            <h3>Relatório Jurídico</h3>
+            <a href="#" class="button">Gerar Laudo Técnico</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <h2>Infraestrutura & Integrações</h2>
+    <div class="integrations">
+        <div>🔐 SUPABASE (LGPD)</div>
+        <div>💳 STRIPE</div>
+        <div>📱 WHATSAPP</div>
+        <div>🔗 LINKEDIN</div>
+    </div>
+
+    <div style="text-align:center;margin-top:30px;">
+        <a href="https://wa.me/5565992689099" class="button">Contato WhatsApp</a>
+        <a href="https://linkedin.com/in/biancatalitafranco8" class="button">LinkedIn</a>
+    </div>
+</section>
+
+<div class="footer">
+NEXUS © 2026 | Engineering Risk Architecture
+</div>
+
+<script>
+let language = "pt";
+
+function toggleLanguage(){
+    if(language === "pt"){
+        document.getElementById("hero-title").innerText =
+        "AI Engineering for Capital Shielding & Regulatory Risk Defense";
+
+        document.getElementById("hero-desc").innerText =
+        "Risk Engineering Platform for Mining, Agro and Healthcare. Probabilistic architecture for legal defense and structural margin preservation.";
+
+        document.getElementById("ecosystem-title").innerText =
+        "Recurring Ecosystem";
+
+        language="en";
+    } else {
+        document.getElementById("hero-title").innerText =
+        "Engenharia de IA para Blindagem de Capital e Risco Regulatório";
+
+        document.getElementById("hero-desc").innerText =
+        "Plataforma de Engenharia de Risco para Mineração, Agro e Saúde. Arquitetura probabilística para defesa jurídica e preservação de margem estrutural.";
+
+        document.getElementById("ecosystem-title").innerText =
+        "Ecossistema Recorrente";
+
+        language="pt";
+    }
+}
+
+// Monte Carlo visual simulation
+const canvas = document.getElementById("riskChart");
+const ctx = canvas.getContext("2d");
+
+function drawMonteCarlo(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    ctx.strokeStyle="#B8860B";
+    ctx.beginPath();
+
+    for(let i=0;i<canvas.width;i++){
+        let y = 100 + Math.sin(i*0.05)*40 + Math.random()*15;
+        ctx.lineTo(i,y);
+    }
+    ctx.stroke();
+}
+
+drawMonteCarlo();
+</script>
+
+</body>
+</html>
