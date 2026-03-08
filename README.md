@@ -1,27 +1,20 @@
-# NEXUS – Engineering Risk Intelligence Platform
+# Platform NEXUS™ Platform | Executive Decision Systems & Capital Risk Architecture. Engineering Risk Intelligence
 
-NEXUS is an engineering decision platform designed to simulate financial, operational and regulatory risks using probabilistic models.
+A infraestrutura de inteligência de decisão projetada para ambientes de alta complexidade e pressão regulatória (Saúde, Agroindustrial, Mineração).
 
-The system combines:
+## 🛡️ Tese de Arquitetura (Engineering 8.0)
+A Plataforma NEXUS converte dados fragmentados (ERPs, bases legadas) em simulações probabilísticas, permitindo que Conselhos de Administração quantifiquem a exposição financeira antes da alocação de capital.
 
-- Monte Carlo simulation
-- Volatility monitoring
-- Risk diagnostics
-- AI decision support
+## ⚙️ Core Modules (Módulos Principais)
+* **Risk_Diagnostic_Engine:** Motor de ingestão de dados para mapeamento rápido de exposição (Express & Board Editions).
+* **Monte_Carlo_Simulator:** Módulo de stress-test (10.000+ cenários) para volatilidade cambial e ruptura de Supply Chain.
+* **Decision_Memo_Generator:** Trilha de auditoria e governança (Compliance LGPD/GDPR) para proteção jurídica de decisões do C-Level.
 
-## Use Cases
+## 📐 C4 Model Architecture
+*(Insira aqui a imagem do seu diagrama C4 mostrando as camadas: Data -> Intelligence -> Decision)*
 
-Mining companies  
-Agribusiness operations  
-Healthcare infrastructure  
-Supply chain operations
-
-## Core Modules
-
-Monte Carlo Risk Simulation  
-Volatility Monitoring (XAU / DXY / commodities)  
-Regulatory Risk Assessment  
-Executive Risk Reports
+## 🔒 Governança e Segurança (Enterprise Readiness)
+Construído sob os frameworks ISO 31000 e COSO ERM. A arquitetura garante o isolamento de dados sensíveis (Multi-tenant security) e a explicabilidade dos algoritmos de IA (Explainable AI - XAI), garantindo que a tecnologia amplifique a decisão humana, sem substituir a responsabilidade executiva.
 
 ## Architecture
 
@@ -32,4 +25,4 @@ Infrastructure: Vercel + Supabase
 ## Author
 
 Bianca Talita  
-Production Engineer | AI Decision Systems
+Production Engineer | AI Decision Systems 
